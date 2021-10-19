@@ -35,6 +35,12 @@ header {
 	font-size: 1.3em;
 	padding-bottom: 16px;
 	font-weight: 700;
+	transition: all 0.5s ease;
+}
+
+.nav li:hover {
+	color: #3474B6;
+	cursor: pointer;
 }
 
 /* Body text formatting */
@@ -50,10 +56,42 @@ h3 {
 }
 
 .photo-block {
-	background-color: #3474B6;
+	position: relative;
 	max-width: 100%;
 	height: 70vh;
 	margin-bottom: 16px;
+	transition: all 1s ease;
+}
+
+#slideselector {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+}
+
+#slideselector li {
+	border-radius: 50%;	
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+.selectedPhoto {
+	background-color: transparent !important;
+	outline: white solid 2px;
+}
+
+#imageholder {
+	width: 100%;
+	height: 100%;;
+}
+
+#imageholder img {
+	width: 100%;
+	height: auto;
 }
 
 /* Footer formatting */
