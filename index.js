@@ -4,7 +4,7 @@ photoSelector = document.getElementById("slideselector");
 
 //photos to display on main page slideshow.
 const photo_path = "/images/frontpage_slideshow/";
-images = ["photo1.jpeg", "photo2.jpg", "photo3.jpeg", "photo4.jpg"];
+images = ["photo1.jpg", "photo2.jpg", "photo3.jpg", "photo4.jpg"];
 
 //Create selector dots for each photo
 var listitems = "";
