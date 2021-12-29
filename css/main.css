@@ -7,7 +7,8 @@
 	font-family: "Roboto", sans-serif;
 }
 
-/*Need to hide elements that wouldn't rendered if not setting all elements to be display flex.*/
+/*Need to hide elements that wouldn't rendered 
+if not setting all elements to be display flex.*/
 head, script {
 	display: none;
 }
@@ -70,25 +71,39 @@ h3 {
 	font-size: 1.5em;
 	font-weight: 700;
 	padding-bottom: 8px;
+	padding-top: 5vh;
+}
+
+/*Media Container Formatting*/
+.media-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	height: 35vw;
 }
 
 /*Video Formatting*/
 .video-container {
-	padding-top: 5vh;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
+	height: 100%;
+	width: 65%;
+	padding: 10px;
 }
 
 .video-container iframe {
-	width: 60vw;
-	height: 40vw;
+	width: 100%;
+	height: 80%;
+	border: none;
 }
 
 /* Twitter Feed Formatting */
 .twitter-feed {
-	padding-top: 5vh;
-	height: 70vh;
+	height: 100%;
+	width: 30%;
 	overflow-y: scroll;
 }
 
@@ -99,7 +114,6 @@ h3 {
 	position: relative;
 	max-width: 100%;
 	height: 55vh;
-	margin-bottom: 16px;
 	transition: all 1s ease;
 }
 
