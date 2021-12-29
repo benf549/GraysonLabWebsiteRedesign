@@ -163,8 +163,10 @@ footer {
 	header {
 		flex-direction: column;
 	}
-	.logo {
+	.logo a {
+		display: flex;
 		justify-content: center;
+		align-content: center;
 	}
 	.nav {
 		flex-direction: column;
@@ -177,4 +179,20 @@ footer {
 	.footer-logo img {
 		min-width: 400px;
 	}
+/* Collapse media-container vertically.*/
+	.media-container {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 70vh;
+	}
+	.video-container {
+		width: 100%;
+		height: 35vh;
+	}
+	.twitter-feed {
+		width: 100%;
+		height: 35vh;
+	}
+
 }
