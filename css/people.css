@@ -4,7 +4,7 @@
 	/* grid-auto-rows: 30vh; */
 	grid-gap: 5vh;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 
 /* .people-container:hover {
@@ -13,15 +13,10 @@
 
 #bio-popup {
 	display: none; /* hide by default, update in javascript */
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	grid-column: span 3;
 
-	/* background-color: rgba(0,0,255,0.5); */
-	background-color: white;
-	height: 50vh;
-	width: 50vw;
+	background-color: blue;
+	max-height: 50vh;
 	
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -32,10 +27,7 @@
 	text-align: center;
 	font-size: 1em;
 	text-indent: 0;
-}
-
-.hidden {
-	display: none;
+	white-space: nowrap;
 }
 
 .person {
@@ -43,7 +35,6 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: red;
 	cursor: pointer;
 }
 
@@ -60,4 +51,9 @@
 .person img {
 	height: 25vh;
 	width: 20vh;
+}
+
+/* Hidden helper class to hide elements from javascript */
+.hidden {
+	display: none !important;
 }

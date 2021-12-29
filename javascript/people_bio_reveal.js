@@ -5,14 +5,26 @@ Array.from(people).forEach(p => {
 })
 
 popup = document.getElementById("bio-popup")
+container = document.getElementById("container")
 function handleClickedOnPerson(p) {
 	//Grab the hidden bio text from the person.
 	bio_text = p.childNodes[5].innerText;
-	p.id = "selected"
 
-	//
+	//Set the hidden bio text of the selected element to be the text in the popup and show it
 	popup.childNodes[1].innerText = bio_text
 	popup.style.display = "flex"
 
+	//Get an array of not selected people.
+	p.id = "selected"
+	siblings = Array.from(people).filter(person => person.id != "selected")
+	console.log(siblings)
 	p.id = ""
+
+	//Hide the not selected people
+	siblings.forEach(p => {
+		p.classList.add("hidden")
+		// p.classList.remove("hidden")
+	})
+
+	container.style.alignItems = "center"
 } 
