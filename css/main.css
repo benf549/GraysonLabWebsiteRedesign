@@ -78,10 +78,8 @@ h3 {
 .media-container {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
-
-	height: 35vw;
 }
 
 /*Video Formatting*/
@@ -89,20 +87,20 @@ h3 {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	height: 100%;
+	height: 28vw;
 	width: 65%;
 	padding: 10px;
 }
 
 .video-container iframe {
 	width: 100%;
-	height: 80%;
+	height: 100%;
 	border: none;
 }
 
 /* Twitter Feed Formatting */
 .twitter-feed {
-	height: 100%;
+	height: 28vw;
 	width: 30%;
 	overflow-y: scroll;
 }
