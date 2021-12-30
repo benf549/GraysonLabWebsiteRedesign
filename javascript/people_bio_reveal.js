@@ -7,6 +7,7 @@ Array.from(people).forEach(p => {
 
 popup = document.getElementById("bio-popup")
 container = document.getElementById("container")
+//function to display popup box containing person's bio when clicked.
 function handleClickedOnPerson(p) {
 	//Grab the hidden bio text from the person.
 	bio_text = p.childNodes[5].innerText;
@@ -37,6 +38,7 @@ function handleClickedOnPerson(p) {
 
 }
 
+//Function which undoes what is done in the person clicked function. 
 function handleClickedReturn(p, siblings) {
 	//Reset the popup box.
 	popup.childNodes[1].innerText = ""
