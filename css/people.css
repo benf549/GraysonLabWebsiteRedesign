@@ -14,13 +14,11 @@
 #bio-popup {
 	display: none; /* hide by default, update in javascript */
 	grid-column: span 3;
-
-	background-color: blue;
+	/* background-color: blue;
 	max-height: 50vh;
-	
 	overflow-y: scroll;
 	overflow-x: hidden;
-	outline: black 1px solid;
+	outline: black 1px solid; */
 }
 
 #bio-popup p {
@@ -28,6 +26,11 @@
 	font-size: 1em;
 	text-indent: 0;
 	white-space: nowrap;
+}
+
+#return-button {
+	display: none;
+	cursor: pointer;
 }
 
 .person {

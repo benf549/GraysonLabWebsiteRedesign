@@ -4,6 +4,7 @@ Array.from(people).forEach(p => {
 	p.onclick = () => handleClickedOnPerson(p);
 })
 
+
 popup = document.getElementById("bio-popup")
 container = document.getElementById("container")
 function handleClickedOnPerson(p) {
@@ -18,13 +19,40 @@ function handleClickedOnPerson(p) {
 	p.id = "selected"
 	siblings = Array.from(people).filter(person => person.id != "selected")
 	console.log(siblings)
-	p.id = ""
 
 	//Hide the not selected people
 	siblings.forEach(p => {
 		p.classList.add("hidden")
-		// p.classList.remove("hidden")
 	})
 
+	//Center the selected headshot.
 	container.style.alignItems = "center"
-} 
+
+	//Add function which undoes the handleClickedOnPerson effects to the return button.
+	returnBtn = document.getElementById("return-button")
+	returnBtn.onclick = () => handleClickedReturn(p, siblings)
+
+	//Show return button
+	returnBtn.style.display = "flex"
+
+}
+
+function handleClickedReturn(p, siblings) {
+	//Reset the popup box.
+	popup.childNodes[1].innerText = ""
+	popup.style.display = "none"
+
+	//Unset person id from 'selected'.
+	p.id = ""
+
+	//Show hidden siblings.
+	siblings.forEach(p => {
+		p.classList.remove("hidden")
+	})
+
+	//Reset people container.
+	container.style.alignItems = "flex-start"
+
+	//hide return button
+	returnBtn.style.display = "none"
+}
