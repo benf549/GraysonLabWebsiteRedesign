@@ -44,6 +44,11 @@
 	display: none;
 }
 
+/*For some reason either vscode or chrome is inserting linebreaks, hide them with this.*/
+br {
+	display: none !important;
+}
+
 .person h3 {
 	padding: 0;
 	padding-top: 2vh;
