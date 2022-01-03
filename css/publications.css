@@ -1,0 +1,36 @@
+
+.article-header {
+	padding: 0;
+}
+
+.journal-articles, .book-chapters {
+	flex-direction: column;
+	padding-top: 8px;
+}
+
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-bottom: 8px;
+    padding-top: 5vh;
+	color: #4673BA;
+}
+
+main h4:first-of-type {
+	padding-top: 0;
+}
+
+.year {
+	flex-direction: column;
+}
+
+.year p, .year b{
+	display: inline;
+	flex-direction: column;
+	text-indent: 0;
+}
+
+.year p {
+	margin-bottom: 15px;
+}
