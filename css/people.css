@@ -60,3 +60,41 @@
 .hidden {
 	display: none !important;
 }
+
+@media (max-width: 850px) {
+	/* When the screen width is <=850px*/
+	.people-container {
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		justify-content: center;
+		grid-auto-rows: auto;
+	}
+
+	#selected {
+		background-color: red;
+		grid-column: span 2;
+	}
+
+	#bio-popup {
+		grid-column: span 2;
+	}
+
+	#bio-popup p {
+		white-space: normal;
+	}
+}
+
+@media (max-width: 500px) {
+	/* When the screen width is <=350px*/
+	.people-container {
+		grid-template-columns: 1fr;
+	}
+
+	#selected {
+		grid-column: span 1;
+	}
+
+	#bio-popup {
+		grid-column: span 1;
+	}
+}
