@@ -22,10 +22,8 @@
 }
 
 #bio-popup p {
-	text-align: center;
 	font-size: 1em;
-	text-indent: 0;
-	white-space: nowrap;
+	text-align: left;
 }
 
 #return-button {
@@ -62,20 +60,12 @@
 }
 
 @media (max-width: 850px) {
-	/* When the screen width is <=850px*/
+	/* When the screen width is <=850px, move to two column layout*/
 	.people-container {
 		grid-template-columns: 1fr 1fr;
-		align-items: center;
-		justify-content: center;
-		grid-auto-rows: auto;
 	}
 
-	#selected {
-		background-color: red;
-		grid-column: span 2;
-	}
-
-	#bio-popup {
+	#selected, #bio-popup {
 		grid-column: span 2;
 	}
 
@@ -85,16 +75,12 @@
 }
 
 @media (max-width: 500px) {
-	/* When the screen width is <=350px*/
+	/* When the screen width is <=350px, move to one column layout*/
 	.people-container {
 		grid-template-columns: 1fr;
 	}
 
-	#selected {
-		grid-column: span 1;
-	}
-
-	#bio-popup {
+	#selected, #bio-popup {
 		grid-column: span 1;
 	}
 }
