@@ -30,6 +30,18 @@ main h4:first-of-type {
 	text-indent: 0;
 }
 
+.year a {
+	display: inline;
+	padding-left: 1em;
+	text-decoration: none;
+	font-weight: 700;
+	color: #4673BA;
+}
+
+.year a:hover {
+	text-decoration: underline;
+}
+
 .year p {
 	margin-bottom: 15px;
 }
