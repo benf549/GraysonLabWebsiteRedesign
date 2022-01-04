@@ -1,0 +1,35 @@
+.research-topic {
+	flex-direction: column;
+}
+
+.research-topic p:first-of-type {
+	text-indent: 3em;
+}
+
+.research-topic p {
+	display: inline;
+	text-indent: 0;
+	padding-bottom: 2.5vh;
+}
+
+.research-topic i {
+	display: inline;
+	font-weight: 700;
+}
+
+.photo-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	width: 100%;
+}
+
+.photo-grid img {
+	width: 20vw;
+	height: 20vw;
+}
+
+.long-image {
+	grid-column: 2 / 5;
+	width: 60vw !important;
+	height: 20vw;
+}
