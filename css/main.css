@@ -153,7 +153,39 @@ h3 {
 }
 
 footer {
+	align-items: center;
+	flex-direction: column;
 	justify-content: center;
+}
+
+footer p {
+	font-size: 1.25em;
+}
+
+footer a {
+	text-indent: 8px;
+}
+
+footer strong {
+	font-size: 1.25em;
+}
+
+.contact-information {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5vh;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.contact-group {
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.contact {
+	flex-direction: column;
 }
 
 
@@ -192,6 +224,10 @@ footer {
 	.twitter-feed {
 		width: 100%;
 		height: 35vh;
+	}
+/* Fold footer contact information 8 */
+	.contact-information {
+		grid-template-columns: 1fr;
 	}
 
 }

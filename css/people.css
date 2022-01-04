@@ -1,24 +1,14 @@
 .people-container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	/* grid-auto-rows: 30vh; */
 	grid-gap: 5vh;
 	justify-content: center;
 	align-items: flex-start;
 }
 
-/* .people-container:hover {
-	grid-template-columns: 1fr 3fr;
-} */
-
 #bio-popup {
 	display: none; /* hide by default, update in javascript */
 	grid-column: span 3;
-	/* background-color: blue;
-	max-height: 50vh;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	outline: black 1px solid; */
 }
 
 #bio-popup p {
