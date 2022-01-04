@@ -27,7 +27,6 @@ main h4:first-of-type {
 
 .year p, .year b{
 	display: inline;
-	flex-direction: column;
 	text-indent: 0;
 }
 

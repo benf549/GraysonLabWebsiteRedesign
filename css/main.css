@@ -75,6 +75,13 @@ h3 {
 	padding-top: 5vh;
 }
 
+h4 {
+	font-size: 1.25em;
+	font-weight: 700;
+	padding-bottom: 8px;
+	padding-top: 2.5vh;
+}
+
 /*Media Container Formatting*/
 .media-container {
 	display: flex;
@@ -147,6 +154,29 @@ h3 {
 	height: auto;
 }
 
+/* Teaching formatting */
+.teaching-container {
+	flex-direction: column;
+}
+
+.teaching-container h4:first-of-type {
+	padding-top: 0;
+}
+
+.teaching-container ul {
+	padding-left: 5em;
+	flex-direction: column;
+}
+
+.teaching-container li {
+	display: list-item;
+	font-size: 1.25em;
+}
+
+.teaching-container strong {
+	display: inline;
+}
+
 /* Footer formatting */
 .footer-logo img {
 	max-width: 20vw;
@@ -156,6 +186,13 @@ footer {
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+}
+
+footer hr {
+	width: 80%;
+	border: none;
+	border-top: black 1px solid;
+	margin-top: 15vh;
 }
 
 footer p {
