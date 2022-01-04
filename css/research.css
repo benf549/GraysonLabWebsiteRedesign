@@ -33,3 +33,17 @@
 	width: 60vw !important;
 	height: 20vw;
 }
+
+@media (max-width: 850px) {
+	/* Fold photogrid to be 2 photos wide on smaller screens. */
+	.photo-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.photo-grid img {
+		width: 40vw;
+		height: 40vw;
+	}
+	.long-image {
+		display: none;
+	}
+}
