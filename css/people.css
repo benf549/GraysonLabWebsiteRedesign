@@ -38,9 +38,9 @@ br {
 	display: none !important;
 }
 
-.person h3 {
+.person h3, .person h4 {
 	padding: 0;
-	padding-top: 2vh;
+	padding-top: 4px;
 }
 
 .person img {
@@ -53,6 +53,20 @@ br {
 	display: none !important;
 }
 
+@media (max-width: 1300px) {
+	.people-container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	#bio-popup {
+		grid-column: 2/4;
+	}
+
+	#bio-popup p {
+		white-space: normal;
+	}
+}
+
 @media (max-width: 850px) {
 	/* When the screen width is <=850px, move to two column layout*/
 	.people-container {
@@ -63,9 +77,6 @@ br {
 		grid-column: span 2;
 	}
 
-	#bio-popup p {
-		white-space: normal;
-	}
 }
 
 @media (max-width: 500px) {

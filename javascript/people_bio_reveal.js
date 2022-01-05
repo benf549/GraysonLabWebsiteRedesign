@@ -10,7 +10,7 @@ container = document.getElementById("container")
 //function to display popup box containing person's bio when clicked.
 function handleClickedOnPerson(p) {
 	//Grab the hidden bio text from the person.
-	bio_text = p.childNodes[5].innerText;
+	bio_text = p.childNodes[7].innerText;
 
 	//Set the hidden bio text of the selected element to be the text in the popup and show it
 	popup.childNodes[1].innerText = bio_text
@@ -19,7 +19,6 @@ function handleClickedOnPerson(p) {
 	//Get an array of not selected people.
 	p.id = "selected"
 	siblings = Array.from(people).filter(person => person.id != "selected")
-	console.log(siblings)
 
 	//Hide the not selected people
 	siblings.forEach(p => {
