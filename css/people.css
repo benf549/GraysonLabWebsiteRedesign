@@ -11,10 +11,39 @@
 	grid-column: span 3;
 }
 
-#bio-popup p {
+#popup-html {
+	flex-direction: column;
+}
+
+#popup-html p {
 	font-size: 1em;
 	text-align: left;
+	padding-bottom: 16px;
+	text-indent: 0;
 }
+
+#popup-html p:first-of-type {
+	text-indent: 3em;
+}
+
+#popup-html ul {
+	flex-direction: column;
+	margin-top: 16px;
+}
+
+#popup-html li {
+	display: list-item;
+	text-indent: 1.5em;
+}
+
+#popup-html a {
+	display: inline;
+}
+
+.personal-blurb-container {
+	display: none;
+}
+
 
 #return-button {
 	display: none;

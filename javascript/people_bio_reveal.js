@@ -10,10 +10,10 @@ container = document.getElementById("container")
 //function to display popup box containing person's bio when clicked.
 function handleClickedOnPerson(p) {
 	//Grab the hidden bio text from the person.
-	bio_text = p.childNodes[7].innerText;
+	bio_text = p.childNodes[7].innerHTML;
 
 	//Set the hidden bio text of the selected element to be the text in the popup and show it
-	popup.childNodes[1].innerText = bio_text
+	popup.childNodes[1].innerHTML = bio_text
 	popup.style.display = "flex"
 
 	//Get an array of not selected people.
@@ -26,7 +26,7 @@ function handleClickedOnPerson(p) {
 	})
 
 	//Center the selected headshot.
-	container.style.alignItems = "center"
+	// container.style.alignItems = "center"
 
 	//Add function which undoes the handleClickedOnPerson effects to the return button.
 	returnBtn = document.getElementById("return-button")
