@@ -10,7 +10,8 @@
 
 /*Need to hide elements that wouldn't rendered 
 if not setting all elements to be display flex.*/
-head, script {
+head,
+script {
 	display: none;
 }
 
@@ -61,7 +62,7 @@ main {
 	flex-direction: column;
 	padding: 0 5vw;
 }
- 
+
 main p {
 	text-indent: 3em;
 	font-size: 1.25em;
@@ -119,7 +120,7 @@ h4 {
 .photo-block {
 	position: relative;
 	max-width: 100%;
-	height: 55vh;
+	max-height: 55vh;
 	transition: all 1s ease;
 }
 
@@ -131,7 +132,7 @@ h4 {
 }
 
 #slideselector li {
-	border-radius: 50%;	
+	border-radius: 50%;
 	width: 15px;
 	height: 15px;
 	background-color: white;
@@ -146,7 +147,8 @@ h4 {
 
 #imageholder {
 	width: 100%;
-	height: 100%;;
+	height: 100%;
+	;
 }
 
 #imageholder img {
@@ -227,44 +229,61 @@ footer strong {
 
 
 @media (max-width: 850px) {
-/* When the screen width is <=850px stack the header bar for more mobile friendly experience. */
+
+	/* When the screen width is <=850px stack the header bar for more mobile friendly experience. */
 	header {
 		flex-direction: column;
 	}
+
 	.logo a {
 		display: flex;
 		justify-content: center;
 		align-content: center;
 	}
+
 	.nav {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
+
 	.nav li:first-child {
 		padding-top: 16px;
 	}
+
 	.footer-logo img {
 		min-width: 400px;
 	}
-/* Collapse media-container vertically.*/
+
+	/* Collapse media-container vertically.*/
 	.media-container {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		height: 70vh;
 	}
+
 	.video-container {
 		width: 100%;
 		height: 35vh;
 	}
+
 	.twitter-feed {
 		width: 100%;
 		height: 35vh;
 	}
 
-/* Fold footer contact information 8 */
+	/* Fold footer contact information 8 */
 	.contact-information {
 		grid-template-columns: 1fr;
+	}
+
+	/* Shrink Text */
+	main p {
+		font-size: 1em;
+	}
+
+	footer p {
+		font-size: 1em;
 	}
 }

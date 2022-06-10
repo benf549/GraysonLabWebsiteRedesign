@@ -1,19 +1,19 @@
-
 .article-header {
 	padding: 0;
 }
 
-.journal-articles, .book-chapters {
+.journal-articles,
+.book-chapters {
 	flex-direction: column;
 	padding-top: 8px;
 }
 
 
 h4 {
-    font-size: 1.5em;
-    font-weight: 700;
-    padding-bottom: 8px;
-    padding-top: 5vh;
+	font-size: 1.5em;
+	font-weight: 700;
+	padding-bottom: 8px;
+	padding-top: 5vh;
 	color: #4673BA;
 }
 
@@ -25,7 +25,8 @@ main h4:first-of-type {
 	flex-direction: column;
 }
 
-.year p, .year b{
+.year p,
+.year b {
 	display: inline;
 	text-indent: 0;
 }
@@ -44,4 +45,60 @@ main h4:first-of-type {
 
 .year p {
 	margin-bottom: 15px;
+}
+
+.not-sele a {
+	color: grey;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.sele a {
+	color: #3474B6;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.sele {
+	border: 1px solid #3474B6;
+}
+
+.sele:hover {
+	background-color: #3474B6;
+}
+
+.not-sele:hover {
+	background-color: grey;
+}
+
+.sele:hover a,
+.not-sele:hover a {
+	color: white;
+}
+
+.not-sele {
+	border: 1px solid grey;
+}
+
+.sele,
+.not-sele {
+	border-radius: 5px;
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0 10px 0;
+}
+
+.pub-nav-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.pub-nav-wrapper h3:first-child {
+	margin-right: 15px;
+}
+
+#subheading {
+	margin-top: 20px;
 }
