@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 .article-header {
 	padding: 0;
 }
@@ -29,6 +33,7 @@ main h4:first-of-type {
 .year b {
 	display: inline;
 	text-indent: 0;
+	font-size: 1em;
 }
 
 .year a {
@@ -47,16 +52,19 @@ main h4:first-of-type {
 	margin-bottom: 15px;
 }
 
-.not-sele a {
-	color: grey;
+.sele a, .not-sele a {
 	text-decoration: none;
 	cursor: pointer;
+	text-align: center;
+	padding: 0 10px 0 10px;
+}
+
+.not-sele a {
+	color: grey;
 }
 
 .sele a {
 	color: #3474B6;
-	cursor: pointer;
-	text-decoration: none;
 }
 
 .sele {
@@ -101,4 +109,24 @@ main h4:first-of-type {
 
 #subheading {
 	margin-top: 20px;
+}
+
+.publication-year-selector {
+	border: 1px solid #3474B6;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.publication-year-selector a {
+	color: #3474B6;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+	margin: 0 10px 0 10px;
 }
