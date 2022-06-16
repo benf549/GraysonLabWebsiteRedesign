@@ -70,6 +70,7 @@ br {
 .person h3, .person h4 {
 	padding: 0;
 	padding-top: 4px;
+	text-align: center;
 }
 
 .person img {
