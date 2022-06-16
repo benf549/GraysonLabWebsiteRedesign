@@ -21,12 +21,9 @@ h4 {
 	color: #4673BA;
 }
 
-main h4:first-of-type {
-	padding-top: 0;
-}
-
 .year {
 	flex-direction: column;
+	word-wrap: break-word;
 }
 
 .year p,
@@ -52,18 +49,29 @@ main h4:first-of-type {
 	margin-bottom: 15px;
 }
 
-.sele a, .not-sele a {
+.sele a, .not-sele a, .external-links a {
 	text-decoration: none;
 	cursor: pointer;
 	text-align: center;
 	padding: 0 10px 0 10px;
 }
 
+.external-links a:first-child {
+	padding-left: 0;
+}
+
+.external-links {
+	width: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-bottom: 4vh;
+}
+
 .not-sele a {
 	color: grey;
 }
 
-.sele a {
+.sele a, .external-links a {
 	color: #3474B6;
 }
 
@@ -91,19 +99,18 @@ main h4:first-of-type {
 .sele,
 .not-sele {
 	border-radius: 5px;
-	width: 20%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 10px 0 10px 0;
 }
 
-.pub-nav-wrapper {
+.pub-nav-wrapper, .external-links {
 	display: flex;
 	flex-direction: row;
 }
 
-.pub-nav-wrapper h3:first-child {
+.pub-nav-wrapper h3:first-child, .external-links h3:first-child {
 	margin-right: 15px;
 }
 
