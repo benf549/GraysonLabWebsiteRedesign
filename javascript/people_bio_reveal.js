@@ -7,6 +7,7 @@ Array.from(people).forEach(p => {
 
 popup = document.getElementById("bio-popup")
 container = document.getElementById("container")
+alumni = document.getElementsByClassName("alumni-container")
 //function to display popup box containing person's bio when clicked.
 function handleClickedOnPerson(p) {
 	//Grab the hidden bio text from the person.
@@ -24,6 +25,9 @@ function handleClickedOnPerson(p) {
 	siblings.forEach(p => {
 		p.classList.add("hidden")
 	})
+
+
+	alumni[0].style.display = "none"
 
 	//Center the selected headshot.
 	// container.style.alignItems = "center"
@@ -56,4 +60,6 @@ function handleClickedReturn(p, siblings) {
 
 	//hide return button
 	returnBtn.style.display = "none"
+
+	alumni[0].style.display = "block"
 }

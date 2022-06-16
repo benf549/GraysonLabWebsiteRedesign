@@ -83,6 +83,32 @@ br {
 	display: none !important;
 }
 
+.alumni-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.alumni-container ul {
+	display: flex;
+	flex-direction: column;
+}
+
+.alumni-container li {
+	padding-left: 1em;
+}
+
+.alumni-container h5 {
+	margin-top: 1.5em;
+}
+
+.alumni-container h5:first-of-type {
+	margin-top: 0;
+}
+
+.alumni-container h3 {
+	padding-bottom: 0;
+}
+
 @media (max-width: 1300px) {
 	.people-container {
 		grid-template-columns: 1fr 1fr 1fr;
