@@ -40,6 +40,7 @@
 
 .photo-group img {
 	max-width: 250px;
+	max-height: 188px
 }
 
 .photo-group img:hover {
