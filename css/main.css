@@ -34,7 +34,7 @@ header {
 }
 
 .nav {
-	align-items: flex-end;
+	align-items: center;
 	justify-content: flex-end;
 }
 
@@ -47,7 +47,7 @@ header {
 .nav li {
 	margin-right: 1vw;
 	font-size: 1.3em;
-	padding-bottom: 16px;
+	padding: 8px 0;
 	font-weight: 700;
 	transition: all 0.5s ease;
 }
@@ -96,7 +96,7 @@ h4 {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	height: 28vw;
+	height: 40vw;
 	width: 65%;
 	padding: 10px;
 }
@@ -109,7 +109,7 @@ h4 {
 
 /* Twitter Feed Formatting */
 .twitter-feed {
-	height: 28vw;
+	height: 40vw;
 	width: 30%;
 	overflow-y: scroll;
 }
@@ -227,8 +227,51 @@ footer strong {
 	flex-direction: column;
 }
 
+.gif-container {
+	position: relative;
+	text-align: center;
+	color: white;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.gif-container img {
+	object-fit: cover;
+	max-width: 100%;
+}
+
+.gif-container h1 {
+	z-index: 5;
+	position: absolute;
+	font-size: 55px;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 5px 5px 7px black;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 1100px) {
+	header img {
+		max-width: 100%;
+	}
+	
+}
+
+@media (max-width: 1075px) {
+	.gif-container h1 {
+		font-size: 45px;
+	}
+}
 
 @media (max-width: 850px) {
+
+	header img {
+		max-width: 70%;
+	}
 
 	/* When the screen width is <=850px stack the header bar for more mobile friendly experience. */
 	header {
@@ -263,14 +306,25 @@ footer strong {
 		height: 70vh;
 	}
 
+	.gif-container h1 {
+		font-size: 30px;
+	}
+
+	.media-container {
+		overflow: hidden;
+		height: 125vh;
+	}
+
 	.video-container {
 		width: 100%;
-		height: 35vh;
+		height: 400px;
 	}
 
 	.twitter-feed {
 		width: 100%;
-		height: 35vh;
+		height: calc(125vh - 400px);
+		margin-top: 2em;
+		padding: 0 60px;
 	}
 
 	/* Fold footer contact information 8 */
@@ -288,24 +342,3 @@ footer strong {
 	}
 }
 
-.gif-container {
-	position: relative;
-	text-align: center;
-	color: white;
-	height: 500px;
-}
-
-.gif-container img {
-	object-fit: cover;
-	max-width: 100%;
-}
-
-.gif-container h1 {
-	z-index: 5;
-	position: absolute;
-	font-size: 40px;
-	top: 15%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-shadow: 2px 2px black;
-}
