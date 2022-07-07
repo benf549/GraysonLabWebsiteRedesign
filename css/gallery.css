@@ -76,26 +76,24 @@
 
 .photo-grid {
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
 	flex-wrap: wrap;
-	padding: 0 4px;
-	width: 95%;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
 }
 
 .photo-grid img {
 	object-fit: cover;
-	flex: 33%;
-	max-width: 33%;
+	width: 33%;
+	height: 300px;
 	padding: 5px;
-	min-width: 330px;
-	min-height: 250px;
 }
 
 .photo-grid img:hover {
 	object-fit: contain;
 	cursor: pointer;
 }
+
 
 @media (max-width: 850px) {
 	.photo-grid img {
