@@ -287,3 +287,25 @@ footer strong {
 		font-size: 1em;
 	}
 }
+
+.gif-container {
+	position: relative;
+	text-align: center;
+	color: white;
+	height: 500px;
+}
+
+.gif-container img {
+	object-fit: cover;
+	max-width: 100%;
+}
+
+.gif-container h1 {
+	z-index: 5;
+	position: absolute;
+	font-size: 40px;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 2px 2px black;
+}

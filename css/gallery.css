@@ -38,6 +38,15 @@
 	align-items: center;
 }
 
+.photo-group-link {
+	text-decoration: none;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 .photo-group img {
 	max-width: 250px;
 	max-height: 188px
