@@ -18,6 +18,10 @@
 	color: gray;
 }
 
+.photo-group-selector li {
+	padding: 1em;
+}
+
 .photo-group-selector {
 	margin-bottom: 5vh;
 }
@@ -107,6 +111,12 @@
 		width: 100%;
 	}
 
+}
+
+@media (max-width: 750px) {
+	.photo-group-selector {
+		flex-wrap: wrap;
+	}
 }
 
 
