@@ -32,7 +32,7 @@
 	flex-wrap: wrap;
 	width: 100%;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: flex-start;
 }
 
 .photo-group {
@@ -48,7 +48,14 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly; 
+	padding: 10px 5px;
+	border-radius: 1%;
+}
+
+.photo-group-link:hover {
+	background-color: whitesmoke;
+
 }
 
 .photo-group img {
@@ -64,7 +71,9 @@
 .photo-group h3 {
 	max-width: 250px;
 	text-align: center;
-	height: 50px;
+	height: 60px;
+	display: flex;
+	align-items: center;
 }
 
 .photo-group h3 {
