@@ -42,6 +42,10 @@
 	align-items: center;
 }
 
+#selected a {
+	color: gray;
+}
+
 .photo-group-link {
 	text-decoration: none;
 	color: black;
