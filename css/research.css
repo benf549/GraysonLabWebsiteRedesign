@@ -34,6 +34,26 @@
 	height: 20vw;
 }
 
+.stemcell-gif {
+	grid-column: 1 / 4;
+	width: 60vw !important;
+}
+
+.bioreactor-gif {
+	grid-column: 1 / 5;
+	width: 80vw !important;
+	height: 30vw !important;
+}
+
+.muscle-gif {
+	grid-column: 1 / 4;
+	width: 60vw !important;
+}
+
+.research-gif {
+	object-fit: cover;
+}
+
 @media (max-width: 850px) {
 	/* Fold photogrid to be 2 photos wide on smaller screens. */
 	.photo-grid {
@@ -43,7 +63,19 @@
 		width: 40vw;
 		height: 40vw;
 	}
+	.bioreactor-img-2 {
+		grid-row: 3 / 5;
+	}
+	
 	.long-image {
+		grid-column: 1 / 3;
+		width: 80vw !important;
+	}
+	.muscle-gif, .stemcell-gif {
+		grid-column: 1 / 3;
+		width: 80vw !important;
+	}
+	.hide-on-small-screen {
 		display: none;
 	}
 }
