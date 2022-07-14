@@ -92,6 +92,7 @@ br {
 .alumni-container {
 	display: flex;
 	flex-direction: column;
+	padding: 0 5em;
 }
 
 .alumni-container ul {
@@ -137,6 +138,10 @@ br {
 
 	#selected, #bio-popup {
 		grid-column: span 2;
+	}
+
+	.alumni-container {
+		padding: 0 1em;
 	}
 
 }
