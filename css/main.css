@@ -358,6 +358,11 @@ footer strong {
 
 
 @media (max-width: 500px) {
+	.gif-container h1 {
+		max-width: 80%;
+
+	}
+
 	.contact-group {
 		flex-direction: column;
 		justify-content: center;
