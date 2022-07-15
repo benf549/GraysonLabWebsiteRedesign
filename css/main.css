@@ -293,6 +293,10 @@ footer strong {
 
 @media (max-width: 850px) {
 
+	footer strong {
+		font-size: 1em;
+	}
+
 	header img {
 		max-width: 70%;
 	}
@@ -361,6 +365,11 @@ footer strong {
 	.gif-container h1 {
 		max-width: 80%;
 
+	}
+
+	.footer-logo img {
+		max-width: 300px !important;
+		min-width: 300px !important;
 	}
 
 	.contact-group {
