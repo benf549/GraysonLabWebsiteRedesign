@@ -356,3 +356,17 @@ footer strong {
 
 }
 
+
+@media (max-width: 500px) {
+	.contact-group {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contact-name {
+		padding-right: 8em;
+		white-space: nowrap;
+
+	}
+}
