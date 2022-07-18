@@ -348,11 +348,10 @@ footer strong {
 	}
 
 	.twitter-feed {
-		width: 100%;
+		width: 90%;
 		height: calc(125vh - 400px);
 		min-height: 350px;
 		margin-top: 2em;
-		padding: 0 60px;
 	}
 
 
