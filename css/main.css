@@ -24,8 +24,8 @@ body {
 }
 
 header img {
-	max-width: 70%;
-	height: auto;
+	max-width: 75%;
+	max-height: 125px;
 }
 
 header {
@@ -267,7 +267,7 @@ footer strong {
 		min-width: 400px;
 	}
 	header img {
-		max-width: 100%;
+		max-width: 70%;
 	}
 
 
@@ -297,10 +297,6 @@ footer strong {
 		font-size: 1em;
 	}
 
-	header img {
-		max-width: 70%;
-	}
-
 	/* When the screen width is <=850px stack the header bar for more mobile friendly experience. */
 	header {
 		flex-direction: column;
@@ -310,6 +306,16 @@ footer strong {
 		display: flex;
 		justify-content: center;
 		align-content: center;
+	}
+
+	.logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.logo img {
+		max-height: 100px;
 	}
 
 	.nav {
