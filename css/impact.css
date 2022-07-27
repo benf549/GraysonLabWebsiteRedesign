@@ -2,6 +2,9 @@
 	display: flex;
 	flex-direction: column;
 }
+.outreach-container h4 {
+	font-weight: 500;
+}
 
 .class-list, .outreach-list{
 	display: flex;
