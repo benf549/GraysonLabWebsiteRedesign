@@ -1,0 +1,75 @@
+.courses-container, .outreach-container, .imp-media-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.class-list, .outreach-list{
+	display: flex;
+	flex-direction: column;
+	list-style-type: disc;
+	width: 100%;
+}
+
+.class-list li, .outreach-list li {
+	display: list-item;
+	margin-left: 3em;
+	font-size: 1.25em;
+}
+
+.class-list strong {
+	display: inline;
+}
+
+.img-grid {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	overflow: hidden;
+	width: 80vw;
+	margin-left: 1.5em;
+}
+
+.img-grid img {
+	height: 20vw;
+}
+
+.media-card h3, .media-card p {
+	margin: 0;
+	padding: 0;
+}
+
+.media-card {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.media-card:hover {
+	background-color: whitesmoke;
+
+}
+
+.media-card img {
+	width: 200px;
+	height: 200px;
+	object-fit: contain;
+}
+
+.card-text {
+	display: flex;
+	flex-direction: column;
+	color: black;
+	padding-left: 1.5em;
+}
+
+.card-text p {
+	text-align: left;
+}
+
+.imp-media-container a {
+	text-decoration: none;
+}

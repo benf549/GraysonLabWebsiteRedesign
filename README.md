@@ -119,7 +119,15 @@ ffmpeg -ss 00:00:00.000 -i 349F3C22-171F-46A8-A240-F387D9B9DBE1\ \(1\).MOV -pix_
 - Adjust footer to look nicer on smaller screens
 - Add bone research gif
 
-(7/22/2022) 11:30am -
+(7/22/2022) 11:30am - 1:30pm
 
 - Add new logo to website
 - Adjust logo styling on all screen sizes to look good.
+- Used illustrator to trace the new logo's G to convert it into an SVG and use that as the website's Favicon.
+- Began updating the impact page.
+
+(7/27/2022) 8:30am - 11:25am
+
+- Design the impact page
+- left courses as a bulleted list as before, added images for the outreach events. don't have images for the thread program so not sure whether to remove or keep that.
+- Added a media section with links to articles.
