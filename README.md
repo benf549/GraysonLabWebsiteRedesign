@@ -126,8 +126,16 @@ ffmpeg -ss 00:00:00.000 -i 349F3C22-171F-46A8-A240-F387D9B9DBE1\ \(1\).MOV -pix_
 - Used illustrator to trace the new logo's G to convert it into an SVG and use that as the website's Favicon.
 - Began updating the impact page.
 
-(7/27/2022) 8:30am - 11:25am
+(7/27/2022) 8:30am - 12:00am
 
 - Design the impact page
-- left courses as a bulleted list as before, added images for the outreach events. don't have images for the thread program so not sure whether to remove or keep that.
+- left courses as a bulleted list as before
+- added images for the outreach events. don't have images for the thread program so not sure whether to remove or keep that.
 - Added a media section with links to articles.
+- Added thread company logo to take place of photos from it.
+
+(8/11/2022) 12:00pm - 1:00pm
+
+- Push website to the main page url
+- Backup the old website
+- update relative paths for gallery page since links weren't working.
