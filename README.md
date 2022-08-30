@@ -139,3 +139,8 @@ ffmpeg -ss 00:00:00.000 -i 349F3C22-171F-46A8-A240-F387D9B9DBE1\ \(1\).MOV -pix_
 - Push website to the main page url
 - Backup the old website
 - update relative paths for gallery page since links weren't working.
+
+(8/29/2022) 9:45pm - 10:15pm
+
+- Add Eileen and Jinghong to people page
+- Remove Wonhee and Renee from people page.
