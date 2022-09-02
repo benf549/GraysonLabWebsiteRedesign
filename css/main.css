@@ -8,6 +8,9 @@
 	transition: all 0.5s ease;
 }
 
+.twitter-feed {
+	display: inline-block;
+}
 /*Need to hide elements that wouldn't rendered 
 if not setting all elements to be display flex.*/
 head,
