@@ -144,3 +144,8 @@ ffmpeg -ss 00:00:00.000 -i 349F3C22-171F-46A8-A240-F387D9B9DBE1\ \(1\).MOV -pix_
 
 - Add Eileen and Jinghong to people page
 - Remove Wonhee and Renee from people page.
+
+(9/04/2022) 2:30 - 3:30pm
+
+- Typed up website access and gif generation instructions.
+- Backed up old website's photos to Google Drive.
